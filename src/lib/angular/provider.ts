@@ -15,14 +15,11 @@ import {
 } from '@angular/core';
 import {DOCUMENT, isPlatformBrowser, isPlatformServer} from '@angular/common';
 import {filter, take} from 'rxjs/operators';
-
-import {EventReplayer} from './api/event.replayer';
-import {PREBOOT_NONCE} from './common/tokens';
-import {getInlinePrebootCode} from './api/inline.preboot.code';
-import {PrebootOptions} from './common/preboot.interfaces';
+import {EventReplayer, getInlinePrebootCode, PrebootOptions} from 'preboot';
 
 const PREBOOT_SCRIPT_ID = 'preboot-inline-script';
 export const PREBOOT_OPTIONS = new InjectionToken<PrebootOptions>('PrebootOptions');
+export const PREBOOT_NONCE = new InjectionToken<string>('PrebootNonce');
 
 export function PREBOOT_FACTORY(doc: Document,
                                 prebootOpts: PrebootOptions,
