@@ -1,0 +1,12 @@
+{
+  "name": "preboot/angular",
+  "typings": "./index.d.ts",
+  "main": "../bundles/preboot-angular.umd.js",
+  "module": "../fesm5/angular.js",
+  "es2015": "../fesm2015/angular.js",
+  "esm5": "../esm5/angular/index.js",
+  "esm2015": "../esm2015/angular/index.js",
+  "fesm5": "../fesm5/angular.js",
+  "fesm2015": "../fesm2015/angular.js",
+  "sideEffects": false
+}

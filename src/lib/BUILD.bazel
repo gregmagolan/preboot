@@ -21,7 +21,12 @@ ng_module(
 # Creates the preboot package published to npm
 ng_package(
     name = "npm_package",
-    srcs = ["package.json"],
+    srcs = [
+      "package.json",
+      "//src/lib/angular:package.json",
+      "//src/lib/api:package.json",
+      "//src/lib/common:package.json",
+    ],
     entry_point = "src/lib/public_api.js",
     entry_point_name = "preboot",
     globals = PREBOOT_ROLLUP_GLOBALS,

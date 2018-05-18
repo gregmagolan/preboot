@@ -1,0 +1,12 @@
+{
+  "name": "preboot/api",
+  "typings": "./index.d.ts",
+  "main": "../bundles/preboot-api.umd.js",
+  "module": "../fesm5/api.js",
+  "es2015": "../fesm2015/api.js",
+  "esm5": "../esm5/api/index.js",
+  "esm2015": "../esm2015/api/index.js",
+  "fesm5": "../fesm5/api.js",
+  "fesm2015": "../fesm2015/api.js",
+  "sideEffects": false
+}

@@ -1,0 +1,12 @@
+{
+  "name": "preboot/common",
+  "typings": "./index.d.ts",
+  "main": "../bundles/preboot-common.umd.js",
+  "module": "../fesm5/common.js",
+  "es2015": "../fesm2015/common.js",
+  "esm5": "../esm5/common/index.js",
+  "esm2015": "../esm2015/common/index.js",
+  "fesm5": "../fesm5/common.js",
+  "fesm2015": "../fesm2015/common.js",
+  "sideEffects": false
+}
